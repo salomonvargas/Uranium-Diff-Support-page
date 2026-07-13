@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Claude Code local settings
+.claude/
+
+# Jekyll build output (FASE 2)
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/

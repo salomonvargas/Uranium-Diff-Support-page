@@ -1,0 +1,30 @@
+name: 💡 Feature request
+description: Suggest an idea for Uranium Diff
+title: "[Feature]: "
+labels: ["feature", "app"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tell us what you'd like to see. Prefer email? Write to [uraniumdiff@outlook.com](mailto:uraniumdiff@outlook.com).
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or need
+      description: What would you like to be able to do, and why?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: How you imagine it working.
+    validations:
+      required: false
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives
+      description: Other approaches you've considered.
+    validations:
+      required: false

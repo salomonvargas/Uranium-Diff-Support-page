@@ -1,0 +1,72 @@
+name: 🐞 Bug report
+description: Report a problem with Uranium Diff
+title: "[Bug]: "
+labels: ["bug", "app"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Uranium Diff.
+
+        Prefer a private channel? Email [uraniumdiff@outlook.com](mailto:uraniumdiff@outlook.com) instead.
+
+        ⚠️ **Don't include passwords, private paths, or confidential file contents.**
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What you expected vs. what happened
+      description: Describe the expected and the actual behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. …
+        2. …
+        3. …
+    validations:
+      required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: File source
+      options:
+        - Local
+        - URL
+        - SSH
+        - Folders
+        - Git
+        - Other
+    validations:
+      required: false
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      description: "Uranium Diff ▸ About"
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: "macOS 26.0"
+    validations:
+      required: true
+  - type: input
+    id: mac-model
+    attributes:
+      label: Mac model
+      placeholder: "MacBook Pro (M1, 2021)"
+    validations:
+      required: false
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or notes
+      description: Attach screenshots if helpful, avoiding confidential information.
+    validations:
+      required: false
