@@ -1,6 +1,9 @@
 ---
+layout: default
 title: "Uranium Diff Support"
 lang: en
+ref: index
+permalink: /en/
 ---
 
 # Uranium Diff Support
@@ -49,8 +52,8 @@ lang: en
 - Pro is an **auto-renewing subscription** (monthly or yearly), managed from your App Store account settings.
 
 ### Where to start
-- 👉 **[Quick start](quick-start.md)** — your first comparison in a minute.
-- ❓ **[FAQ](faq.md)**
-- 🛠️ **[Troubleshooting](troubleshooting.md)**
-- 🔒 **[Privacy policy](privacy.md)**
-- 💬 **[Support & bug reports](support.md)**
+- 👉 **[Quick start]({{ '/en/quick-start/' | relative_url }})** — your first comparison in a minute.
+- ❓ **[FAQ]({{ '/en/faq/' | relative_url }})**
+- 🛠️ **[Troubleshooting]({{ '/en/troubleshooting/' | relative_url }})**
+- 🔒 **[Privacy policy]({{ '/en/privacy/' | relative_url }})**
+- 💬 **[Support & bug reports]({{ '/en/support/' | relative_url }})**

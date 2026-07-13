@@ -1,6 +1,9 @@
 ---
+layout: default
 title: "Solución de problemas"
 lang: es
+ref: troubleshooting
+permalink: /es/solucion-de-problemas/
 ---
 
 # Solución de problemas
@@ -32,4 +35,4 @@ La URL debe ser **HTTP/HTTPS** y el archivo accesible públicamente; hay un lím
 La app sigue funcionando en el **plan Free**. Para recuperar las funciones Pro, suscríbete desde la pantalla de Uranium Diff Pro.
 
 **¿Sigue sin resolverse?**
-Escríbenos: [Soporte y reporte de errores](soporte.md).
+Escríbenos: [Soporte y reporte de errores]({{ '/es/soporte/' | relative_url }}).

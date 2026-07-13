@@ -1,6 +1,9 @@
 ---
+layout: default
 title: "FAQ"
 lang: en
+ref: faq
+permalink: /en/faq/
 ---
 
 # Frequently asked questions

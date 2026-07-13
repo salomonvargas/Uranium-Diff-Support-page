@@ -1,6 +1,9 @@
 ---
+layout: default
 title: "Política de privacidad"
 lang: es
+ref: privacy
+permalink: /es/privacidad/
 ---
 
 # Política de privacidad

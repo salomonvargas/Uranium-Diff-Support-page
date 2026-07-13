@@ -1,6 +1,9 @@
 ---
+layout: default
 title: "Preguntas frecuentes"
 lang: es
+ref: faq
+permalink: /es/preguntas-frecuentes/
 ---
 
 # Preguntas frecuentes

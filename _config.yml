@@ -1,0 +1,16 @@
+title: Uranium Diff — Support
+description: Support, FAQ, troubleshooting and privacy policy for Uranium Diff, a native macOS file & folder comparison app.
+url: "https://salomonvargas.github.io"
+baseurl: "/Uranium-Diff-Support-page"
+lang: en
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .github

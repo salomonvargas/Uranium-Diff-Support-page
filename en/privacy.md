@@ -1,6 +1,9 @@
 ---
+layout: default
 title: "Privacy policy"
 lang: en
+ref: privacy
+permalink: /en/privacy/
 ---
 
 # Privacy policy

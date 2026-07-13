@@ -1,0 +1,15 @@
+es:
+  - { title: "Inicio",               ref: index,           url: "/es/" }
+  - { title: "Inicio rápido",        ref: quick-start,     url: "/es/inicio-rapido/" }
+  - { title: "FAQ",                  ref: faq,             url: "/es/preguntas-frecuentes/" }
+  - { title: "Solución de problemas", ref: troubleshooting, url: "/es/solucion-de-problemas/" }
+  - { title: "Privacidad",           ref: privacy,         url: "/es/privacidad/" }
+  - { title: "Soporte",              ref: support,         url: "/es/soporte/" }
+
+en:
+  - { title: "Home",           ref: index,           url: "/en/" }
+  - { title: "Quick start",    ref: quick-start,     url: "/en/quick-start/" }
+  - { title: "FAQ",            ref: faq,             url: "/en/faq/" }
+  - { title: "Troubleshooting", ref: troubleshooting, url: "/en/troubleshooting/" }
+  - { title: "Privacy",        ref: privacy,         url: "/en/privacy/" }
+  - { title: "Support",        ref: support,         url: "/en/support/" }

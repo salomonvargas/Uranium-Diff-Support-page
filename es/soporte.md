@@ -1,6 +1,9 @@
 ---
+layout: default
 title: "Soporte y reporte de errores"
 lang: es
+ref: support
+permalink: /es/soporte/
 ---
 
 # Soporte
@@ -27,8 +30,8 @@ Para un buen reporte, incluye:
 
 ### 📚 Antes de escribir
 Quizá tu duda ya esté resuelta en:
-- [Inicio rápido](inicio-rapido.md)
-- [Preguntas frecuentes](preguntas-frecuentes.md)
-- [Solución de problemas](solucion-de-problemas.md)
+- [Inicio rápido]({{ '/es/inicio-rapido/' | relative_url }})
+- [Preguntas frecuentes]({{ '/es/preguntas-frecuentes/' | relative_url }})
+- [Solución de problemas]({{ '/es/solucion-de-problemas/' | relative_url }})
 
 > Nota de privacidad: los GitHub Issues son **públicos**. No incluyas contraseñas, rutas privadas ni contenido confidencial de tus archivos.

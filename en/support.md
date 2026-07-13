@@ -1,6 +1,9 @@
 ---
+layout: default
 title: "Support & bug reports"
 lang: en
+ref: support
+permalink: /en/support/
 ---
 
 # Support
@@ -27,8 +30,8 @@ Missing something? Open a **GitHub Issue** with the *feature request* label, or 
 
 ### 📚 Before you write
 Your question may already be answered in:
-- [Quick start](quick-start.md)
-- [FAQ](faq.md)
-- [Troubleshooting](troubleshooting.md)
+- [Quick start]({{ '/en/quick-start/' | relative_url }})
+- [FAQ]({{ '/en/faq/' | relative_url }})
+- [Troubleshooting]({{ '/en/troubleshooting/' | relative_url }})
 
 > Privacy note: GitHub Issues are **public**. Don't include passwords, private paths, or confidential file contents.

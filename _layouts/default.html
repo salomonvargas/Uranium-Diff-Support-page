@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}Uranium Diff</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="icon" href="{{ '/assets/img/logo.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d0f12" media="(prefers-color-scheme: dark)">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  {% assign nav = site.data.nav[page.lang] %}
+  {% if page.lang == 'es' %}{% assign otherlang = 'en' %}{% else %}{% assign otherlang = 'es' %}{% endif %}
+  {% assign othernav = site.data.nav[otherlang] %}
+  {% assign otherurl = nil %}
+  {% for item in othernav %}{% if item.ref == page.ref %}{% assign otherurl = item.url %}{% endif %}{% endfor %}
+  {% unless otherurl %}{% capture otherurl %}/{{ otherlang }}/{% endcapture %}{% endunless %}
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="{{ nav[0].url | relative_url }}">
+        <img src="{{ '/assets/img/logo.svg' | relative_url }}" alt="" width="26" height="26">
+        <span>Uranium Diff</span>
+      </a>
+      <nav class="site-nav" aria-label="{% if page.lang == 'es' %}Navegación{% else %}Navigation{% endif %}">
+        {% for item in nav %}
+          <a href="{{ item.url | relative_url }}"{% if item.ref == page.ref %} class="active" aria-current="page"{% endif %}>{{ item.title }}</a>
+        {% endfor %}
+      </nav>
+      <a class="lang-switch" href="{{ otherurl | relative_url }}" rel="alternate" hreflang="{{ otherlang }}">{{ otherlang | upcase }}</a>
+    </div>
+  </header>
+
+  <main id="content" class="wrap content">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      {% if page.lang == 'es' %}
+      <p>Uranium Diff v1.0.0 · © 2026 Uranium Diff · <a href="mailto:uraniumdiff@outlook.com">uraniumdiff@outlook.com</a> · <a href="https://github.com/salomonvargas/Uranium-Diff-Support-page/issues/new/choose">Reportar un problema</a> · <a href="{{ '/es/privacidad/' | relative_url }}">Privacidad</a></p>
+      {% else %}
+      <p>Uranium Diff v1.0.0 · © 2026 Uranium Diff · <a href="mailto:uraniumdiff@outlook.com">uraniumdiff@outlook.com</a> · <a href="https://github.com/salomonvargas/Uranium-Diff-Support-page/issues/new/choose">Report an issue</a> · <a href="{{ '/en/privacy/' | relative_url }}">Privacy</a></p>
+      {% endif %}
+    </div>
+  </footer>
+</body>
+</html>

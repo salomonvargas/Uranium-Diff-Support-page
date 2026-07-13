@@ -1,6 +1,9 @@
 ---
+layout: default
 title: "Soporte de Uranium Diff"
 lang: es
+ref: index
+permalink: /es/
 ---
 
 # Soporte de Uranium Diff
@@ -49,8 +52,8 @@ lang: es
 - Pro es una **suscripción auto-renovable** (mensual o anual). Se administra desde los ajustes de tu cuenta del App Store.
 
 ### ¿Por dónde empiezo?
-- 👉 **[Inicio rápido](inicio-rapido.md)** — tu primera comparación en un minuto.
-- ❓ **[Preguntas frecuentes](preguntas-frecuentes.md)**
-- 🛠️ **[Solución de problemas](solucion-de-problemas.md)**
-- 🔒 **[Política de privacidad](privacidad.md)**
-- 💬 **[Soporte y reporte de errores](soporte.md)**
+- 👉 **[Inicio rápido]({{ '/es/inicio-rapido/' | relative_url }})** — tu primera comparación en un minuto.
+- ❓ **[Preguntas frecuentes]({{ '/es/preguntas-frecuentes/' | relative_url }})**
+- 🛠️ **[Solución de problemas]({{ '/es/solucion-de-problemas/' | relative_url }})**
+- 🔒 **[Política de privacidad]({{ '/es/privacidad/' | relative_url }})**
+- 💬 **[Soporte y reporte de errores]({{ '/es/soporte/' | relative_url }})**

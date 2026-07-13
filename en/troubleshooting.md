@@ -1,6 +1,9 @@
 ---
+layout: default
 title: "Troubleshooting"
 lang: en
+ref: troubleshooting
+permalink: /en/troubleshooting/
 ---
 
 # Troubleshooting
@@ -32,4 +35,4 @@ The URL must be **HTTP/HTTPS** and publicly reachable; there's a **50 MB** limit
 The app keeps working on the **Free plan**. To restore Pro features, subscribe from the Uranium Diff Pro screen.
 
 **Still stuck?**
-Reach out: [Support & bug reports](support.md).
+Reach out: [Support & bug reports]({{ '/en/support/' | relative_url }}).

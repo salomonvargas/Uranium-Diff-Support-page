@@ -1,6 +1,9 @@
 ---
+layout: default
 title: "Inicio rápido"
 lang: es
+ref: quick-start
+permalink: /es/inicio-rapido/
 ---
 
 # Inicio rápido

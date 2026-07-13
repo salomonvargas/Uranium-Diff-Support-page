@@ -1,6 +1,9 @@
 ---
+layout: default
 title: "Quick start"
 lang: en
+ref: quick-start
+permalink: /en/quick-start/
 ---
 
 # Quick start
