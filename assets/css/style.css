@@ -70,7 +70,7 @@ a:hover { text-decoration: underline; }
   font-weight: 700; color: var(--text); font-size: 1.02rem; white-space: nowrap;
 }
 .brand:hover { text-decoration: none; }
-.brand img { display: block; }
+.brand img { display: block; border-radius: 22%; }
 
 .site-nav {
   display: flex; gap: 4px; flex-wrap: wrap; margin-left: auto;
@@ -146,6 +146,7 @@ tbody tr:hover { background: var(--surface); }
 /* ---------- Language landing / 404 ---------- */
 .lang-landing { display: grid; place-items: center; min-height: 100vh; }
 .landing { text-align: center; padding: 40px 20px; }
+.landing img { border-radius: 22%; }
 .landing h1 { font-size: 2.2rem; margin: .3em 0 .1em; }
 .landing p { color: var(--muted); margin: 0 0 1.6em; }
 .landing-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
