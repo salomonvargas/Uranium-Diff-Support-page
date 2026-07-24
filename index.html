@@ -13,22 +13,62 @@ title: Uranium Diff — Support
   <link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
-<body class="lang-landing">
-  <main class="landing">
-    <img src="{{ '/assets/img/icon.png' | relative_url }}" alt="" width="64" height="64">
-    <h1>Uranium Diff</h1>
-    <p>Support · Soporte</p>
-    <div class="landing-actions">
-      <a class="btn" href="{{ '/en/' | relative_url }}" hreflang="en">English</a>
-      <a class="btn" href="{{ '/es/' | relative_url }}" hreflang="es">Español</a>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/img/icon.png' | relative_url }}" alt="" width="26" height="26">
+        <span>Uranium Diff</span>
+      </a>
+      <nav class="site-nav" aria-label="Language / Idioma">
+        <a href="{{ '/en/' | relative_url }}" hreflang="en">English</a>
+        <a href="{{ '/es/' | relative_url }}" hreflang="es">Español</a>
+      </nav>
     </div>
+  </header>
+
+  <main id="content" class="wrap content">
+    <h1>Uranium Diff — Support · Soporte</h1>
+    <p>Uranium Diff is a native macOS file &amp; folder comparison app. This page has support resources in English and Spanish — questions, troubleshooting, and how to reach us. / Uranium Diff es una app nativa de macOS para comparar archivos y carpetas. Aquí tienes recursos de soporte en inglés y español.</p>
+
+    <h2>English</h2>
+    <ul>
+      <li>👉 <a href="{{ '/en/quick-start/' | relative_url }}">Quick start</a></li>
+      <li>❓ <a href="{{ '/en/faq/' | relative_url }}">FAQ</a></li>
+      <li>🛠️ <a href="{{ '/en/troubleshooting/' | relative_url }}">Troubleshooting</a></li>
+      <li>🔒 <a href="{{ '/en/privacy/' | relative_url }}">Privacy policy</a></li>
+      <li>💬 <a href="{{ '/en/support/' | relative_url }}">Support &amp; bug reports</a> — or email <a href="mailto:uraniumdiff@outlook.com">uraniumdiff@outlook.com</a> / open a <a href="https://github.com/salomonvargas/Uranium-Diff-Support-page/issues/new/choose">GitHub issue</a>.</li>
+    </ul>
+
+    <h2>Español</h2>
+    <ul>
+      <li>👉 <a href="{{ '/es/inicio-rapido/' | relative_url }}">Inicio rápido</a></li>
+      <li>❓ <a href="{{ '/es/preguntas-frecuentes/' | relative_url }}">Preguntas frecuentes</a></li>
+      <li>🛠️ <a href="{{ '/es/solucion-de-problemas/' | relative_url }}">Solución de problemas</a></li>
+      <li>🔒 <a href="{{ '/es/privacidad/' | relative_url }}">Política de privacidad</a></li>
+      <li>💬 <a href="{{ '/es/soporte/' | relative_url }}">Soporte y reporte de errores</a> — o escribe a <a href="mailto:uraniumdiff@outlook.com">uraniumdiff@outlook.com</a> / abre un <a href="https://github.com/salomonvargas/Uranium-Diff-Support-page/issues/new/choose">issue en GitHub</a>.</li>
+    </ul>
   </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Uranium Diff · © 2026 Uranium Diff · <a href="mailto:uraniumdiff@outlook.com">uraniumdiff@outlook.com</a> · <a href="https://github.com/salomonvargas/Uranium-Diff-Support-page/issues/new/choose">Report an issue / Reportar un problema</a></p>
+    </div>
+  </footer>
+
   <script>
+    // Enhancement only: if JS runs, send returning visitors straight to their
+    // language's full page. The content above is real and already visible
+    // without this, so nothing breaks if JS is blocked or a crawler doesn't
+    // execute it (Guideline 1.5 rejection: the old root page was JS-only and
+    // showed no content without it).
     (function () {
-      var base = "{{ '/' | relative_url }}";
       var l = (navigator.language || navigator.userLanguage || "en").toLowerCase();
       var lang = l.indexOf("es") === 0 ? "es" : "en";
-      location.replace(base + lang + "/");
+      var target = "{{ '/' | relative_url }}" + lang + "/";
+      if (location.pathname.replace(/\/index\.html$/, "/") !== target) {
+        location.replace(target);
+      }
     })();
   </script>
 </body>
